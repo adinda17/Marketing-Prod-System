@@ -1,0 +1,234 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- TITLE -->
+    <mxCell id="title" value="USE CASE DIAGRAM – Marketing Production &amp; Request Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=18;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="60" y="15" width="1300" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="sub" value="UC-MKT-001 | System Analyst Portfolio Project" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="60" y="49" width="1300" height="20" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ SYSTEM BOUNDARY ═══ -->
+    <mxCell id="boundary" value="&lt;b&gt;&lt;font style=&quot;font-size:13px;&quot;&gt;Marketing Production &amp; Request Management System&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1F3864;strokeWidth=2;verticalAlign=top;fontSize=12;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="260" y="80" width="900" height="1000" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ ACTORS ═══ -->
+    <!-- Brand Manager (left) -->
+    <mxCell id="ac-bm" value="Brand Manager" style="shape=mxgraph.flowchart.actor;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="70" y="320" width="50" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="ac-bm-lbl" value="" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="45" y="395" width="100" height="20" as="geometry"/>
+    </mxCell>
+
+    <!-- Marketing Manager (left) -->
+    <mxCell id="ac-mm" value="Marketing Manager" style="shape=mxgraph.flowchart.actor;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="70" y="540" width="50" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- Digital Marketing (left) -->
+    <mxCell id="ac-dm" value="Digital Marketing" style="shape=mxgraph.flowchart.actor;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="70" y="700" width="50" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- Designer (right) -->
+    <mxCell id="ac-dkv" value="Designer (DKV)" style="shape=mxgraph.flowchart.actor;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="1300" y="380" width="50" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- Content Creator (right) -->
+    <mxCell id="ac-cc" value="Content Creator" style="shape=mxgraph.flowchart.actor;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="1300" y="560" width="50" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ USE CASE GROUPS (with background boxes) ═══ -->
+
+    <!-- GROUP: Auth -->
+    <mxCell id="grp-auth" value="Autentikasi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FB;strokeColor=#2E75B6;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="100" width="860" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- GROUP: Request -->
+    <mxCell id="grp-req" value="Manajemen Permintaan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF4FF;strokeColor=#2E75B6;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="200" width="860" height="120" as="geometry"/>
+    </mxCell>
+
+    <!-- GROUP: Approval -->
+    <mxCell id="grp-apr" value="Dual Approval" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF0;strokeColor=#1A7A4A;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="340" width="860" height="110" as="geometry"/>
+    </mxCell>
+
+    <!-- GROUP: Production -->
+    <mxCell id="grp-prod" value="Produksi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9F0FF;strokeColor=#7B4F9A;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="470" width="860" height="110" as="geometry"/>
+    </mxCell>
+
+    <!-- GROUP: Review -->
+    <mxCell id="grp-rev" value="Review &amp; Validasi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#D79B00;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="600" width="860" height="110" as="geometry"/>
+    </mxCell>
+
+    <!-- GROUP: Internal Task -->
+    <mxCell id="grp-int" value="Internal Task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF0;strokeColor=#1A7A4A;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="730" width="860" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- GROUP: KPI & Announcement -->
+    <mxCell id="grp-kpi" value="KPIM &amp; Announcement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5FF;strokeColor=#555599;strokeWidth=1;verticalAlign=top;fontSize=10;fontStyle=3;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="280" y="830" width="860" height="120" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ USE CASES ═══ -->
+    <!-- UC style helper: ellipse -->
+
+    <!-- AUTH group -->
+    <mxCell id="uc-login"   value="Login ke Sistem"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="340" y="120" width="150" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-logout"  value="Logout"              style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="540" y="120" width="150" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-brand"   value="Pilih Brand (Login)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="740" y="120" width="160" height="40" as="geometry"/></mxCell>
+
+    <!-- REQ group -->
+    <mxCell id="uc-create"  value="Buat Permintaan Baru"    style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="300" y="220" width="160" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-edit"    value="Edit Draft Permintaan"   style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="490" y="220" width="160" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-submit"  value="Submit Permintaan"       style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="680" y="220" width="160" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-track"   value="Pantau Status Permintaan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="870" y="220" width="160" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-cancel"  value="Batalkan Permintaan"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="1"><mxGeometry x="300" y="275" width="160" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-timeline" value="Lihat Activity Timeline" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="680" y="275" width="160" height="40" as="geometry"/></mxCell>
+
+    <!-- APPROVAL group -->
+    <mxCell id="uc-approve" value="Approve Permintaan"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="320" y="365" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-reject"  value="Reject Permintaan"      style="ellipse;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="1"><mxGeometry x="510" y="365" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-viewreq" value="Lihat Semua Permintaan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="700" y="365" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-assign"  value="Assign ke Anggota Tim"  style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="880" y="365" width="155" height="40" as="geometry"/></mxCell>
+
+    <!-- PRODUCTION group -->
+    <mxCell id="uc-start"   value="Mulai Kerjakan (In Progress)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="300" y="495" width="190" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-upload"  value="Upload File Desain"           style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="520" y="495" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-url"     value="Submit Video URL"             style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="705" y="495" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-revise"  value="Upload Ulang (Revisi)"        style="ellipse;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="1"><mxGeometry x="880" y="495" width="155" height="40" as="geometry"/></mxCell>
+
+    <!-- REVIEW group -->
+    <mxCell id="uc-complete" value="Review &amp; Complete Hasil"   style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="310" y="625" width="175" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-reqrev"   value="Request Revision"             style="ellipse;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="1"><mxGeometry x="515" y="625" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-validate" value="Validasi Final (Satisfied)"   style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="700" y="625" width="175" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-notsat"   value="Not Satisfied (Revision)"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="1"><mxGeometry x="900" y="625" width="155" height="40" as="geometry"/></mxCell>
+
+    <!-- INTERNAL TASK group -->
+    <mxCell id="uc-inttask"  value="Buat Internal Task"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="360" y="755" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-intassign" value="Assign Internal Task"  style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="560" y="755" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-intview"  value="Lihat Task yang Diassign" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="760" y="755" width="175" height="40" as="geometry"/></mxCell>
+
+    <!-- KPI & ANN group -->
+    <mxCell id="uc-kpicrud"  value="Kelola KPI Pribadi (CRUD)"    style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#555599;fontSize=10;" vertex="1" parent="1"><mxGeometry x="300" y="855" width="175" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-kpimon"   value="Monitor KPI Tim"              style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="510" y="855" width="155" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-anncrud"  value="Kelola Pengumuman (CRUD)"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#555599;fontSize=10;" vertex="1" parent="1"><mxGeometry x="700" y="855" width="175" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-comment"  value="Beri Komentar Pengumuman"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#555599;fontSize=10;" vertex="1" parent="1"><mxGeometry x="300" y="910" width="190" height="40" as="geometry"/></mxCell>
+    <mxCell id="uc-annview"  value="Lihat Announcement Board"     style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#555599;fontSize=10;" vertex="1" parent="1"><mxGeometry x="700" y="910" width="175" height="40" as="geometry"/></mxCell>
+
+    <!-- ═══ ACTOR → USE CASE ASSOCIATIONS ═══ -->
+
+    <!-- Brand Manager associations -->
+    <mxCell id="r-bm-login"     style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-login"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-logout"    style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-logout"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-brand"     style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-brand"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-create"    style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-create"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-edit"      style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-edit"     parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-submit"    style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-submit"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-track"     style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-track"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-cancel"    style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-cancel"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-timeline"  style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-timeline" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-validate"  style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-validate" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-bm-notsat"    style="endArrow=none;strokeColor=#2E75B6;" edge="1" source="ac-bm" target="uc-notsat"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- Marketing Manager associations -->
+    <mxCell id="r-mm-login"     style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-login"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-approve"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-approve"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-reject"    style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-reject"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-viewreq"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-viewreq"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-assign"    style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-assign"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-complete"  style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-complete" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-reqrev"    style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-reqrev"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-inttask"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-inttask"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-intassign" style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-intassign" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-kpicrud"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-kpicrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-kpimon"    style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-kpimon"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-anncrud"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-anncrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-annview"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-annview"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-mm-comment"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-mm" target="uc-comment"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- Digital Marketing associations (same as MM minus kpimon) -->
+    <mxCell id="r-dm-login"     style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-login"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-approve"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-approve"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-reject"    style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-reject"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-viewreq"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-viewreq"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-complete"  style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-complete" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-reqrev"    style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-reqrev"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-inttask"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-inttask"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-anncrud"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-anncrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dm-kpicrud"   style="endArrow=none;strokeColor=#1A7A4A;" edge="1" source="ac-dm" target="uc-kpicrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- Designer associations (right side) -->
+    <mxCell id="r-dkv-login"    style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-login"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-start"    style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-start"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-upload"   style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-upload"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-revise"   style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-revise"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-intview"  style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-intview"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-kpicrud"  style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-kpicrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-anncrud"  style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-anncrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-comment"  style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-comment"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-dkv-annview"  style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-dkv" target="uc-annview"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- Content Creator associations -->
+    <mxCell id="r-cc-login"     style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-login"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-start"     style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-start"    parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-url"       style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-url"      parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-revise"    style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-revise"   parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-intview"   style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-intview"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-kpicrud"   style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-kpicrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-anncrud"   style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-anncrud"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="r-cc-annview"   style="endArrow=none;strokeColor=#7B4F9A;" edge="1" source="ac-cc" target="uc-annview"  parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- ═══ INCLUDE / EXTEND RELATIONSHIPS ═══ -->
+    <!-- <<include>> brand selection dari login (khusus BM) -->
+    <mxCell id="inc1" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#2E75B6;" edge="1" source="uc-login" target="uc-brand" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- <<include>> submit include generate ID -->
+    <mxCell id="inc2" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#2E75B6;" edge="1" source="uc-submit" target="uc-timeline" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- <<extend>> cancel extend dari track -->
+    <mxCell id="ext1" value="&lt;&lt;extend&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#AE4132;" edge="1" source="uc-cancel" target="uc-track" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- <<extend>> revise extend dari upload -->
+    <mxCell id="ext2" value="&lt;&lt;extend&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#AE4132;" edge="1" source="uc-revise" target="uc-upload" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- <<extend>> not sat extend dari validate -->
+    <mxCell id="ext3" value="&lt;&lt;extend&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#AE4132;" edge="1" source="uc-notsat" target="uc-validate" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- <<include>> inttask include intassign -->
+    <mxCell id="inc3" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#1A7A4A;" edge="1" source="uc-inttask" target="uc-intassign" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- <<include>> comment include annview -->
+    <mxCell id="inc4" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;fontSize=9;fontStyle=3;fontColor=#555599;" edge="1" source="uc-comment" target="uc-annview" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- LEGEND -->
+    <mxCell id="leg-title" value="&lt;b&gt;LEGENDA&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="1100" width="100" height="20" as="geometry"/></mxCell>
+    <mxCell id="leg-bm"  value="Brand Manager"      style="rounded=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60"  y="1125" width="130" height="25" as="geometry"/></mxCell>
+    <mxCell id="leg-mm"  value="Mktg Mgr / Dig.Mktg" style="rounded=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="205" y="1125" width="140" height="25" as="geometry"/></mxCell>
+    <mxCell id="leg-prod" value="Designer / CC"      style="rounded=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="1"><mxGeometry x="360" y="1125" width="120" height="25" as="geometry"/></mxCell>
+    <mxCell id="leg-rej"  value="Alur Error/Negatif"  style="rounded=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="1"><mxGeometry x="495" y="1125" width="130" height="25" as="geometry"/></mxCell>
+    <mxCell id="leg-inc"  value="&lt;&lt;include&gt;&gt; = UC wajib dipanggil" style="text;html=1;strokeColor=#2E75B6;dashed=1;fillColor=none;fontSize=10;" vertex="1" parent="1"><mxGeometry x="640" y="1125" width="210" height="25" as="geometry"/></mxCell>
+    <mxCell id="leg-ext"  value="&lt;&lt;extend&gt;&gt; = UC opsional/kondisional" style="text;html=1;strokeColor=#AE4132;dashed=1;fillColor=none;fontSize=10;" vertex="1" parent="1"><mxGeometry x="865" y="1125" width="230" height="25" as="geometry"/></mxCell>
+
+  </root>
+</mxGraphModel>

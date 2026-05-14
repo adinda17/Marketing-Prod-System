@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- TITLE -->
+    <mxCell id="title" value="BPMN – Marketing Production Request Process" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=18;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="100" y="15" width="1200" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="sub" value="Business Process Model and Notation (BPMN 2.0) | BPMN-MKT-001" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="100" y="49" width="1200" height="20" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ POOLS & LANES ═══ -->
+    <!-- Pool label -->
+    <mxCell id="pool-label" value="Marketing Production Process" style="shape=pool;startSize=20;horizontal=1;childLayout=stackLayout;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneHead=0;fillColor=#1F3864;fontColor=#FFFFFF;strokeColor=#1F3864;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="80" width="1360" height="980" as="geometry"/>
+    </mxCell>
+
+    <!-- Lane: Brand Manager -->
+    <mxCell id="lane-bm" value="Brand Manager" style="swimlane;startSize=30;horizontal=0;fillColor=#EBF4FF;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="pool-label">
+      <mxGeometry x="0" y="20" width="1360" height="160" as="geometry"/>
+    </mxCell>
+
+    <!-- Lane: Approval -->
+    <mxCell id="lane-apr" value="Marketing Manager &amp; Digital Marketing" style="swimlane;startSize=30;horizontal=0;fillColor=#F0FFF0;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="pool-label">
+      <mxGeometry x="0" y="180" width="1360" height="180" as="geometry"/>
+    </mxCell>
+
+    <!-- Lane: System -->
+    <mxCell id="lane-sys" value="Sistem" style="swimlane;startSize=30;horizontal=0;fillColor=#FFF8F0;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="pool-label">
+      <mxGeometry x="0" y="360" width="1360" height="120" as="geometry"/>
+    </mxCell>
+
+    <!-- Lane: Production -->
+    <mxCell id="lane-prod" value="Designer / Content Creator" style="swimlane;startSize=30;horizontal=0;fillColor=#F9F0FF;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="pool-label">
+      <mxGeometry x="0" y="480" width="1360" height="180" as="geometry"/>
+    </mxCell>
+
+    <!-- Lane: Review -->
+    <mxCell id="lane-rev" value="Marketing Manager &amp; Digital Marketing (Review)" style="swimlane;startSize=30;horizontal=0;fillColor=#F0FFF0;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="pool-label">
+      <mxGeometry x="0" y="660" width="1360" height="160" as="geometry"/>
+    </mxCell>
+
+    <!-- Lane: Validation -->
+    <mxCell id="lane-val" value="Brand Manager (Validasi)" style="swimlane;startSize=30;horizontal=0;fillColor=#EBF4FF;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="pool-label">
+      <mxGeometry x="0" y="820" width="1360" height="140" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ BPMN ELEMENTS – Lane: Brand Manager ═══ -->
+
+    <!-- Start Event -->
+    <mxCell id="start" value="Mulai" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="lane-bm">
+      <mxGeometry x="60" y="65" width="40" height="40" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Isi Form -->
+    <mxCell id="t1" value="Isi Form Permintaan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="lane-bm">
+      <mxGeometry x="140" y="55" width="130" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Upload Attachment -->
+    <mxCell id="t2" value="Upload Attachment (opsional)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="lane-bm">
+      <mxGeometry x="310" y="55" width="130" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Submit -->
+    <mxCell id="t3" value="Submit Permintaan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="lane-bm">
+      <mxGeometry x="480" y="55" width="130" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- Intermediate Event: Terima notif rejected -->
+    <mxCell id="ev-rejected" value="Terima Notif Rejected" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=9;" vertex="1" parent="lane-bm">
+      <mxGeometry x="730" y="70" width="50" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- End Event: Request Ditolak -->
+    <mxCell id="end-reject" value="Request Ditolak" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#AE4132;strokeColor=#AE4132;fontColor=#FFFFFF;fontSize=9;strokeWidth=3;" vertex="1" parent="lane-bm">
+      <mxGeometry x="820" y="70" width="50" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Validasi Hasil -->
+    <mxCell id="t-val" value="Review Hasil Produksi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="lane-val">
+      <mxGeometry x="780" y="45" width="130" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- Gateway: Satisfied? -->
+    <mxCell id="gw-sat" value="Satisfied?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="lane-val">
+      <mxGeometry x="960" y="40" width="100" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- End Event: Request Closed -->
+    <mxCell id="end-closed" value="CLOSED" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1A7A4A;strokeColor=#1A7A4A;fontColor=#FFFFFF;fontSize=9;strokeWidth=3;" vertex="1" parent="lane-val">
+      <mxGeometry x="1130" y="50" width="60" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ Lane: Approval ═══ -->
+
+    <!-- Task: MM Review -->
+    <mxCell id="t-mm" value="Marketing Manager Review &amp; Keputusan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="lane-apr">
+      <mxGeometry x="480" y="60" width="140" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: DM Review -->
+    <mxCell id="t-dm" value="Digital Marketing Review &amp; Keputusan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="lane-apr">
+      <mxGeometry x="480" y="105" width="140" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- Parallel Gateway: Both must decide -->
+    <mxCell id="gw-par-in" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=14;" vertex="1" parent="lane-apr">
+      <mxGeometry x="645" y="75" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="gw-par-in-lbl" value="+" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="lane-apr">
+      <mxGeometry x="656" y="88" width="36" height="36" as="geometry"/>
+    </mxCell>
+
+    <!-- Exclusive Gateway: Approve? -->
+    <mxCell id="gw-apr" value="Keduanya Approve?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="lane-apr">
+      <mxGeometry x="740" y="75" width="110" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Tulis Alasan Reject -->
+    <mxCell id="t-reject-note" value="Tulis Alasan Penolakan (wajib)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="lane-apr">
+      <mxGeometry x="890" y="120" width="140" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ Lane: Sistem ═══ -->
+
+    <!-- Task: Generate ID -->
+    <mxCell id="t-genid" value="Generate Request ID" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=10;" vertex="1" parent="lane-sys">
+      <mxGeometry x="310" y="35" width="130" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Update Status Pending -->
+    <mxCell id="t-pending" value="Update Status: PENDING APPROVAL" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=10;" vertex="1" parent="lane-sys">
+      <mxGeometry x="480" y="35" width="140" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Auto Assign -->
+    <mxCell id="t-autoassign" value="Auto-Assign ke Tim Produksi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=10;" vertex="1" parent="lane-sys">
+      <mxGeometry x="640" y="35" width="140" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Update Completed -->
+    <mxCell id="t-completed" value="Update Status: COMPLETED" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=10;" vertex="1" parent="lane-sys">
+      <mxGeometry x="800" y="35" width="140" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ Lane: Production ═══ -->
+
+    <!-- Task: Terima Task -->
+    <mxCell id="t-receive" value="Terima &amp; Pelajari Task" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="lane-prod">
+      <mxGeometry x="640" y="60" width="130" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: In Progress -->
+    <mxCell id="t-inprog" value="Kerjakan Task (In Progress)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="lane-prod">
+      <mxGeometry x="640" y="120" width="130" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Gateway: Design or Video? -->
+    <mxCell id="gw-type" value="Jenis Task?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="lane-prod">
+      <mxGeometry x="800" y="65" width="100" height="65" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Upload File -->
+    <mxCell id="t-upload-file" value="Upload File Desain" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="lane-prod">
+      <mxGeometry x="930" y="45" width="120" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Submit URL -->
+    <mxCell id="t-upload-url" value="Submit Video URL" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="lane-prod">
+      <mxGeometry x="930" y="105" width="120" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- Merge Gateway -->
+    <mxCell id="gw-merge" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#888888;strokeColor=#888888;" vertex="1" parent="lane-prod">
+      <mxGeometry x="1080" y="75" width="50" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ Lane: Review ═══ -->
+
+    <!-- Task: MM Review Hasil -->
+    <mxCell id="t-rev-mm" value="Marketing Manager Review Hasil" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="lane-rev">
+      <mxGeometry x="640" y="40" width="150" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: DM Review Hasil -->
+    <mxCell id="t-rev-dm" value="Digital Marketing Review Hasil" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="lane-rev">
+      <mxGeometry x="640" y="100" width="150" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Parallel Gateway Join -->
+    <mxCell id="gw-rev-join" value="+" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=16;fontStyle=1;" vertex="1" parent="lane-rev">
+      <mxGeometry x="820" y="60" width="60" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- Gateway: Both Complete? -->
+    <mxCell id="gw-complete" value="Keduanya Complete?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="lane-rev">
+      <mxGeometry x="910" y="55" width="120" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- Task: Tulis Catatan Revisi -->
+    <mxCell id="t-rev-note" value="Tulis Catatan Revisi (wajib)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=10;" vertex="1" parent="lane-rev">
+      <mxGeometry x="910" y="130" width="150" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- ═══ SEQUENCE FLOWS ═══ -->
+
+    <!-- Start → Isi Form -->
+    <mxCell id="sf1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="start" target="t1" parent="lane-bm"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- Isi Form → Upload -->
+    <mxCell id="sf2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t1" target="t2" parent="lane-bm"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- Upload → Submit (via t3 in BM lane, goes to sys lane) -->
+    <mxCell id="sf3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t2" target="t3" parent="lane-bm"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+    <!-- Cross-lane: t2 (attachment area) → t-genid (sys) -->
+    <mxCell id="sf-cross1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t2" target="t-genid" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t3 (submit) → t-pending (sys) -->
+    <mxCell id="sf-cross2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t3" target="t-pending" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t-pending → t-mm (approval) -->
+    <mxCell id="sf-cross3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-pending" target="t-mm" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t-pending → t-dm (approval) -->
+    <mxCell id="sf-cross3b" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-pending" target="t-dm" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t-mm → gw-par-in -->
+    <mxCell id="sf4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-mm" target="gw-par-in" parent="lane-apr"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- t-dm → gw-par-in -->
+    <mxCell id="sf5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-dm" target="gw-par-in" parent="lane-apr"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-par-in → gw-apr -->
+    <mxCell id="sf6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="gw-par-in" target="gw-apr" parent="lane-apr"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-apr APPROVE → t-autoassign (sys) -->
+    <mxCell id="sf7" value="Approve" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#1A7A4A;fontStyle=1;" edge="1" source="gw-apr" target="t-autoassign" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- gw-apr REJECT → t-reject-note -->
+    <mxCell id="sf8" value="Reject" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#AE4132;fontStyle=1;" edge="1" source="gw-apr" target="t-reject-note" parent="lane-apr"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- t-reject-note → ev-rejected (BM lane) -->
+    <mxCell id="sf9" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-reject-note" target="ev-rejected" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- ev-rejected → end-reject -->
+    <mxCell id="sf10" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ev-rejected" target="end-reject" parent="lane-bm"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- t-autoassign → t-receive (prod) -->
+    <mxCell id="sf11" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-autoassign" target="t-receive" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t-receive → t-inprog -->
+    <mxCell id="sf12" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-receive" target="t-inprog" parent="lane-prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- t-inprog → gw-type -->
+    <mxCell id="sf13" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-inprog" target="gw-type" parent="lane-prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-type → upload file -->
+    <mxCell id="sf14" value="Design" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;" edge="1" source="gw-type" target="t-upload-file" parent="lane-prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-type → upload url -->
+    <mxCell id="sf15" value="Video" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;" edge="1" source="gw-type" target="t-upload-url" parent="lane-prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- upload file → gw-merge -->
+    <mxCell id="sf16" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-upload-file" target="gw-merge" parent="lane-prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- upload url → gw-merge -->
+    <mxCell id="sf17" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-upload-url" target="gw-merge" parent="lane-prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-merge → t-rev-mm (review lane) -->
+    <mxCell id="sf18" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="gw-merge" target="t-rev-mm" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- gw-merge → t-rev-dm (review lane) -->
+    <mxCell id="sf18b" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="gw-merge" target="t-rev-dm" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t-rev-mm → gw-rev-join -->
+    <mxCell id="sf19" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-rev-mm" target="gw-rev-join" parent="lane-rev"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- t-rev-dm → gw-rev-join -->
+    <mxCell id="sf20" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-rev-dm" target="gw-rev-join" parent="lane-rev"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-rev-join → gw-complete -->
+    <mxCell id="sf21" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="gw-rev-join" target="gw-complete" parent="lane-rev"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-complete → t-completed (sys) COMPLETE -->
+    <mxCell id="sf22" value="Complete" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#1A7A4A;fontStyle=1;" edge="1" source="gw-complete" target="t-completed" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- gw-complete → t-rev-note REVISION -->
+    <mxCell id="sf23" value="Revision" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#AE4132;fontStyle=1;" edge="1" source="gw-complete" target="t-rev-note" parent="lane-rev"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- t-rev-note → t-inprog (loop back) -->
+    <mxCell id="sf24" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-rev-note" target="t-inprog" parent="pool-label">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1100" y="800"/>
+          <mxPoint x="1100" y="950"/>
+          <mxPoint x="560" y="950"/>
+          <mxPoint x="560" y="645"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- t-completed → t-val (validation lane) -->
+    <mxCell id="sf25" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-completed" target="t-val" parent="pool-label">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- t-val → gw-sat -->
+    <mxCell id="sf26" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="t-val" target="gw-sat" parent="lane-val"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-sat YES → end-closed -->
+    <mxCell id="sf27" value="Satisfied" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#1A7A4A;fontStyle=1;" edge="1" source="gw-sat" target="end-closed" parent="lane-val"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <!-- gw-sat NO → t-inprog (loop back) -->
+    <mxCell id="sf28" value="Not Satisfied" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#AE4132;fontStyle=1;" edge="1" source="gw-sat" target="t-inprog" parent="pool-label">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1010" y="960"/>
+          <mxPoint x="1010" y="980"/>
+          <mxPoint x="560" y="980"/>
+          <mxPoint x="560" y="645"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ═══ LEGEND ═══ -->
+    <mxCell id="leg-title" value="&lt;b&gt;LEGENDA BPMN 2.0&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1080" width="160" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg-start" value="Start Event" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=9;" vertex="1" parent="1"><mxGeometry x="40" y="1105" width="36" height="36" as="geometry"/></mxCell>
+    <mxCell id="leg-end" value="End Event" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1A7A4A;strokeColor=#1A7A4A;fontColor=#FFFFFF;fontSize=9;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="90" y="1105" width="36" height="36" as="geometry"/></mxCell>
+    <mxCell id="leg-task" value="Task / Activity" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=9;" vertex="1" parent="1"><mxGeometry x="140" y="1105" width="100" height="36" as="geometry"/></mxCell>
+    <mxCell id="leg-xgw" value="X" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="255" y="1105" width="40" height="40" as="geometry"/></mxCell>
+    <mxCell id="leg-xgw-lbl" value="Exclusive Gateway (XOR)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;" vertex="1" parent="1"><mxGeometry x="300" y="1118" width="160" height="20" as="geometry"/></mxCell>
+    <mxCell id="leg-pgw" value="+" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="470" y="1105" width="40" height="40" as="geometry"/></mxCell>
+    <mxCell id="leg-pgw-lbl" value="Parallel Gateway (AND)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;" vertex="1" parent="1"><mxGeometry x="515" y="1118" width="160" height="20" as="geometry"/></mxCell>
+    <mxCell id="leg-inter" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=9;" vertex="1" parent="1"><mxGeometry x="685" y="1105" width="36" height="36" as="geometry"/></mxCell>
+    <mxCell id="leg-inter-lbl" value="Intermediate Event" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;" vertex="1" parent="1"><mxGeometry x="726" y="1118" width="120" height="20" as="geometry"/></mxCell>
+    <mxCell id="leg-pool" value="Pool / Lane = kelompok aktor yang bertanggung jawab" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontStyle=3;" vertex="1" parent="1"><mxGeometry x="860" y="1118" width="360" height="20" as="geometry"/></mxCell>
+
+  </root>
+</mxGraphModel>

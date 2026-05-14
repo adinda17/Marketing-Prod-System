@@ -1,0 +1,205 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- TITLE -->
+    <mxCell id="title" value="DATA FLOW DIAGRAM – LEVEL 0 (CONTEXT DIAGRAM)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="184" y="20" width="800" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="sub" value="Marketing Production &amp; Request Management System | DFD-MKT-001" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="184" y="54" width="800" height="20" as="geometry"/>
+    </mxCell>
+
+    <!-- CENTRAL PROCESS -->
+    <mxCell id="sys" value="&lt;b&gt;Marketing Production &amp;&lt;br&gt;Request Management&lt;br&gt;System&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Proses 0)&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=13;arcSize=50;" vertex="1" parent="1">
+      <mxGeometry x="434" y="280" width="300" height="160" as="geometry"/>
+    </mxCell>
+
+    <!-- EXTERNAL ENTITIES -->
+    <!-- Brand Manager -->
+    <mxCell id="bm" value="&lt;b&gt;Brand Manager&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Eksternal)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=12;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="60" y="310" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- Marketing Manager -->
+    <mxCell id="mm" value="&lt;b&gt;Marketing Manager&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Internal)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=12;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="200" y="100" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- Digital Marketing -->
+    <mxCell id="dm" value="&lt;b&gt;Digital Marketing&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Internal)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=12;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="810" y="100" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- Designer -->
+    <mxCell id="dkv" value="&lt;b&gt;Designer (DKV)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Internal)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=12;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="200" y="570" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- Content Creator -->
+    <mxCell id="cc" value="&lt;b&gt;Content Creator&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Internal)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=12;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="810" y="570" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- File Storage -->
+    <mxCell id="storage" value="&lt;b&gt;File Storage&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;(Server / Cloud)&lt;/font&gt;" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="810" y="320" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- ── DATA FLOWS ── -->
+
+    <!-- Brand Manager → System -->
+    <mxCell id="f1" value="Data permintaan (brief, deadline,&lt;br&gt;task type, priority, attachment)" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#1F3864;align=center;" edge="1" source="bm" target="sys" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="220" y="340"/>
+          <mxPoint x="434" y="340"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- System → Brand Manager -->
+    <mxCell id="f2" value="Status permintaan, notifikasi,&lt;br&gt;hasil validasi, activity timeline" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#2E75B6;align=center;" edge="1" source="sys" target="bm" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="434" y="380"/>
+          <mxPoint x="220" y="380"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Marketing Manager → System -->
+    <mxCell id="f3" value="Keputusan approval, catatan review,&lt;br&gt;internal task, data KPI, pengumuman" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#1A7A4A;align=center;" edge="1" source="mm" target="sys" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="280" y="130"/>
+          <mxPoint x="280" y="280"/>
+          <mxPoint x="484" y="280"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- System → Marketing Manager -->
+    <mxCell id="f4" value="Antrian approval, review queue,&lt;br&gt;dashboard analytics, KPIM tim" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#2E75B6;align=center;" edge="1" source="sys" target="mm" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="534" y="280"/>
+          <mxPoint x="534" y="200"/>
+          <mxPoint x="360" y="200"/>
+          <mxPoint x="360" y="160"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Digital Marketing → System -->
+    <mxCell id="f5" value="Keputusan approval, catatan review,&lt;br&gt;internal task, data KPI, pengumuman" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#1A7A4A;align=center;" edge="1" source="dm" target="sys" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="890" y="130"/>
+          <mxPoint x="890" y="280"/>
+          <mxPoint x="734" y="280"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- System → Digital Marketing -->
+    <mxCell id="f6" value="Antrian approval, review queue,&lt;br&gt;notifikasi status, pengumuman" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#2E75B6;align=center;" edge="1" source="sys" target="dm" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="634" y="280"/>
+          <mxPoint x="634" y="200"/>
+          <mxPoint x="810" y="200"/>
+          <mxPoint x="810" y="160"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Designer → System -->
+    <mxCell id="f7" value="Update status, file upload desain" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#7B4F9A;align=center;" edge="1" source="dkv" target="sys" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="280" y="570"/>
+          <mxPoint x="280" y="440"/>
+          <mxPoint x="484" y="440"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- System → Designer -->
+    <mxCell id="f8" value="Task yang diassign, brief, deadline,&lt;br&gt;catatan revisi, notifikasi" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#2E75B6;align=center;" edge="1" source="sys" target="dkv" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="534" y="440"/>
+          <mxPoint x="534" y="500"/>
+          <mxPoint x="360" y="500"/>
+          <mxPoint x="360" y="570"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Content Creator → System -->
+    <mxCell id="f9" value="Update status, video URL submission" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#7B4F9A;align=center;" edge="1" source="cc" target="sys" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="890" y="570"/>
+          <mxPoint x="890" y="440"/>
+          <mxPoint x="734" y="440"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- System → Content Creator -->
+    <mxCell id="f10" value="Task yang diassign, brief, deadline,&lt;br&gt;catatan revisi, notifikasi" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#2E75B6;align=center;" edge="1" source="sys" target="cc" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="634" y="440"/>
+          <mxPoint x="634" y="500"/>
+          <mxPoint x="810" y="500"/>
+          <mxPoint x="810" y="570"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- System → File Storage -->
+    <mxCell id="f11" value="Simpan file desain" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#D79B00;align=center;" edge="1" source="sys" target="storage" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="734" y="350"/>
+          <mxPoint x="810" y="350"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- File Storage → System -->
+    <mxCell id="f12" value="Ambil file desain" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#D79B00;align=center;" edge="1" source="storage" target="sys" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="810" y="370"/>
+          <mxPoint x="734" y="370"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- LEGEND -->
+    <mxCell id="leg-title" value="&lt;b&gt;LEGENDA&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="60" y="690" width="100" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg-ext" value="Entitas Eksternal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="60" y="715" width="140" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg-int" value="Entitas Internal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="215" y="715" width="140" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg-prod" value="Tim Produksi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="370" y="715" width="140" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg-proc" value="Proses Utama Sistem" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="525" y="715" width="160" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg-store" value="Data Store / Storage" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="700" y="715" width="140" height="30" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- ════════ PAGE TITLE ════════ -->
+    <mxCell id="pt" value="WIREFRAME (Low-Fidelity) – Marketing Production &amp; Request Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="60" y="10" width="1400" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="ps" value="5 Dashboard: Brand Manager | Marketing Manager | Designer | Content Creator | Announcement Board" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="60" y="38" width="1400" height="18" as="geometry"/>
+    </mxCell>
+
+    <!-- ─────────────────────────────────────────────────────
+         WIREFRAME 1: BRAND MANAGER DASHBOARD
+    ───────────────────────────────────────────────────────── -->
+    <mxCell id="wf1-title" value="[1] Brand Manager Dashboard" style="text;html=1;strokeColor=none;fillColor=#1F3864;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="60" y="65" width="380" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Browser frame -->
+    <mxCell id="wf1-frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="60" y="87" width="380" height="490" as="geometry"/>
+    </mxCell>
+    <!-- Top bar -->
+    <mxCell id="wf1-topbar" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="60" y="87" width="380" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-logo" value="MPR System" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="72" y="95" width="100" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-brand-badge" value="📍 ShabuPot" style="rounded=1;fillColor=#2E75B6;strokeColor=none;fontColor=#FFFFFF;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="240" y="95" width="80" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-avatar" value="👤" style="ellipse;fillColor=#2E75B6;strokeColor=none;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="400" y="94" width="28" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Page heading -->
+    <mxCell id="wf1-heading" value="Dashboard – ShabuPot" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="70" y="132" width="200" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-btn-new" value="+ Buat Permintaan" style="rounded=1;fillColor=#2E75B6;strokeColor=none;fontColor=#FFFFFF;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="340" y="133" width="90" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Stat cards -->
+    <mxCell id="wf1-stat1" value="Draft&#xa;2" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="70" y="162" width="60" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-stat2" value="Pending&#xa;3" style="rounded=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="140" y="162" width="60" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-stat3" value="In Progress&#xa;5" style="rounded=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="210" y="162" width="60" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-stat4" value="Completed&#xa;1" style="rounded=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="280" y="162" width="60" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-stat5" value="Closed&#xa;12" style="rounded=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="350" y="162" width="60" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Alert box -->
+    <mxCell id="wf1-alert" value="⚠️  2 permintaan mendekati deadline (≤3 hari)" style="rounded=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=9;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="222" width="360" height="24" as="geometry"/>
+    </mxCell>
+    <!-- Validation pending widget -->
+    <mxCell id="wf1-val-box" value="✅  Menunggu Validasi Kamu" style="rounded=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="254" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-val-item" value="REQ-DSN-SBP-001 | Promo Ramadan | Completed 2 hari lalu  [Validasi]" style="text;html=1;strokeColor=#D5E8D4;fillColor=#FFFFFF;fontSize=9;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="276" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Table header -->
+    <mxCell id="wf1-th" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="70" y="308" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-th-lbl" value="Request ID          Judul            Status       Deadline    Aksi" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#FFFFFF;align=left;" vertex="1" parent="1">
+      <mxGeometry x="74" y="310" width="356" height="18" as="geometry"/>
+    </mxCell>
+    <!-- Table rows -->
+    <mxCell id="wf1-r1" value="REQ-DSN-SBP-001  Promo Ramadan   🟡 Pending   29 Apr  [Detail]" style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="330" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-r2" value="REQ-VID-SBP-002  Video Menu Baru  🔵 In Prog   1 Mei   [Detail]" style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="352" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-r3" value="REQ-DSN-SBP-003  Banner Event     🟢 Approved  5 Mei   [Detail]" style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="374" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf1-r4" value="REQ-DSN-SBP-004  IG Story Flash   🔴 Revision  30 Apr  [Detail]" style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="396" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Filter bar -->
+    <mxCell id="wf1-filter" value="Filter: [Status ▾]  [Tipe ▾]  [Prioritas ▾]  [Tanggal ▾]   🔍 Cari..." style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="70" y="428" width="360" height="24" as="geometry"/>
+    </mxCell>
+    <!-- Pagination -->
+    <mxCell id="wf1-page" value="◀  1  2  3  ▶" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=center;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="200" y="460" width="100" height="18" as="geometry"/>
+    </mxCell>
+
+    <!-- ─────────────────────────────────────────────────────
+         WIREFRAME 2: MARKETING MANAGER DASHBOARD
+    ───────────────────────────────────────────────────────── -->
+    <mxCell id="wf2-title" value="[2] Marketing Manager Dashboard" style="text;html=1;strokeColor=none;fillColor=#1A7A4A;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="470" y="65" width="380" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="470" y="87" width="380" height="490" as="geometry"/>
+    </mxCell>
+    <!-- Top bar -->
+    <mxCell id="wf2-topbar" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="470" y="87" width="380" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-logo" value="MPR System" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="482" y="95" width="120" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-notif" value="🔔 4" style="rounded=1;fillColor=#AE4132;strokeColor=none;fontColor=#FFFFFF;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="750" y="95" width="36" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-avatar" value="👤" style="ellipse;fillColor=#2E75B6;strokeColor=none;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="798" y="94" width="28" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Heading -->
+    <mxCell id="wf2-heading" value="Selamat pagi, Marketing Manager" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="480" y="132" width="270" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Approval queue widget -->
+    <mxCell id="wf2-apr-hdr" value="⏳  Pending Approval (4)" style="rounded=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="480" y="160" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-apr1" value="REQ-DSN-BPS-005 | Promo Grill | ShabuPot | High  [Approve] [Reject]" style="text;html=1;strokeColor=#FFE6CC;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="480" y="182" width="360" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-apr2" value="REQ-VID-BOPI-003 | Video Lebaran | Baropi OPI | Med  [Approve] [Reject]" style="text;html=1;strokeColor=#FFE6CC;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="480" y="202" width="360" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Review queue widget -->
+    <mxCell id="wf2-rev-hdr" value="🔍  Review Queue (3)" style="rounded=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="480" y="230" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-rev1" value="REQ-DSN-SBP-001 | Promo Ramadan | Designer: Budi  [Review]" style="text;html=1;strokeColor=#DAE8FC;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="480" y="252" width="360" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Quick stats -->
+    <mxCell id="wf2-qs-hdr" value="📊  Ringkasan Semua Permintaan" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="480" y="280" width="240" height="18" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-qs1" value="Total: 48" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=9;align=center;" vertex="1" parent="1"><mxGeometry x="480" y="300" width="60" height="36" as="geometry"/></mxCell>
+    <mxCell id="wf2-qs2" value="In Progress: 12" style="rounded=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=9;align=center;" vertex="1" parent="1"><mxGeometry x="550" y="300" width="80" height="36" as="geometry"/></mxCell>
+    <mxCell id="wf2-qs3" value="Completed: 5" style="rounded=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;fontSize=9;align=center;" vertex="1" parent="1"><mxGeometry x="640" y="300" width="80" height="36" as="geometry"/></mxCell>
+    <mxCell id="wf2-qs4" value="Closed: 31" style="rounded=1;fillColor=#1F3864;strokeColor=#1F3864;fontColor=#FFFFFF;fontSize=9;align=center;" vertex="1" parent="1"><mxGeometry x="730" y="300" width="60" height="36" as="geometry"/></mxCell>
+    <!-- Internal task btn -->
+    <mxCell id="wf2-int-btn" value="+ Buat Internal Task" style="rounded=1;fillColor=#1A7A4A;strokeColor=none;fontColor=#FFFFFF;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="480" y="346" width="140" height="24" as="geometry"/>
+    </mxCell>
+    <!-- KPIM mini -->
+    <mxCell id="wf2-kpi-hdr" value="📈  KPIM Tim – Mei 2025" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="480" y="380" width="180" height="18" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-kpi1" value="Budi (Designer)  ████████░░  80%  On Track" style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="480" y="400" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf2-kpi2" value="Sari (CC)         ██████░░░░  60%  In Progress" style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="480" y="418" width="360" height="18" as="geometry"/></mxCell>
+    <!-- Announcement preview -->
+    <mxCell id="wf2-ann-hdr" value="📢  Pengumuman Terbaru" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="480" y="446" width="180" height="18" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf2-ann1" value="📅  Meeting Review Bulanan – 30 Apr 2025" style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFF9E6;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="480" y="466" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf2-ann2" value="🏋  Training Canva untuk Desainer – 5 Mei 2025" style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="480" y="484" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf2-ann-more" value="Lihat semua pengumuman →" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#2E75B6;align=right;" vertex="1" parent="1"><mxGeometry x="480" y="504" width="360" height="16" as="geometry"/></mxCell>
+
+    <!-- ─────────────────────────────────────────────────────
+         WIREFRAME 3: DESIGNER DASHBOARD
+    ───────────────────────────────────────────────────────── -->
+    <mxCell id="wf3-title" value="[3] Designer Dashboard" style="text;html=1;strokeColor=none;fillColor=#7B4F9A;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="880" y="65" width="380" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf3-frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="880" y="87" width="380" height="490" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf3-topbar" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="880" y="87" width="380" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf3-logo" value="MPR System" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="892" y="95" width="120" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf3-heading" value="My Tasks – Budi (Designer)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="892" y="132" width="250" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Filter -->
+    <mxCell id="wf3-filter" value="[Status ▾]  [Task Type ▾]  [Deadline ▾]  [Prioritas ▾]" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="892" y="158" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Alert -->
+    <mxCell id="wf3-alert" value="⚠️  1 task deadline HARI INI: REQ-DSN-SBP-004" style="rounded=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=9;align=left;" vertex="1" parent="1">
+      <mxGeometry x="892" y="188" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Task cards -->
+    <mxCell id="wf3-t1" value="" style="rounded=1;fillColor=#FCE4D6;strokeColor=#AE4132;" vertex="1" parent="1"><mxGeometry x="892" y="218" width="360" height="60" as="geometry"/></mxCell>
+    <mxCell id="wf3-t1a" value="REQ-DSN-SBP-004 | IG Story Flash Sale  🔴 REVISION" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="900" y="222" width="310" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf3-t1b" value="Deadline: 30 Apr  |  High  |  Brand: ShabuPot" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#666666;align=left;" vertex="1" parent="1"><mxGeometry x="900" y="238" width="280" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf3-t1c" value="[Upload Ulang]" style="rounded=1;fillColor=#AE4132;strokeColor=none;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1"><mxGeometry x="1100" y="250" width="80" height="18" as="geometry"/></mxCell>
+
+    <mxCell id="wf3-t2" value="" style="rounded=1;fillColor=#DAE8FC;strokeColor=#2E75B6;" vertex="1" parent="1"><mxGeometry x="892" y="286" width="360" height="60" as="geometry"/></mxCell>
+    <mxCell id="wf3-t2a" value="INT-DKV-20250429-001 | Banner Internal  🔵 IN PROGRESS  🏷 Internal Task" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="900" y="290" width="340" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf3-t2b" value="Deadline: 3 Mei  |  Medium  |  (No Brand)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#666666;align=left;" vertex="1" parent="1"><mxGeometry x="900" y="306" width="280" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf3-t2c" value="[Upload Hasil]" style="rounded=1;fillColor=#2E75B6;strokeColor=none;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1"><mxGeometry x="1100" y="318" width="80" height="18" as="geometry"/></mxCell>
+
+    <mxCell id="wf3-t3" value="" style="rounded=1;fillColor=#E1D5E7;strokeColor=#7B4F9A;" vertex="1" parent="1"><mxGeometry x="892" y="354" width="360" height="60" as="geometry"/></mxCell>
+    <mxCell id="wf3-t3a" value="REQ-DSN-BPS-005 | Promo Grill  🟣 ASSIGNED" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="900" y="358" width="310" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf3-t3b" value="Deadline: 5 Mei  |  High  |  Brand: Baropi PS" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#666666;align=left;" vertex="1" parent="1"><mxGeometry x="900" y="374" width="280" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf3-t3c" value="[Mulai Kerjakan]" style="rounded=1;fillColor=#7B4F9A;strokeColor=none;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1"><mxGeometry x="1090" y="386" width="90" height="18" as="geometry"/></mxCell>
+
+    <!-- KPIM mini section -->
+    <mxCell id="wf3-kpi-hdr" value="📈  KPI Saya – Mei 2025" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="892" y="426" width="180" height="18" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf3-kpi1" value="Desain Promo Selesai: 8/10  ████████░░  80%" style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="892" y="446" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf3-kpi2" value="Revisi Tepat Waktu: 9/10     █████████░  90%" style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="892" y="464" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf3-kpi-btn" value="[Kelola KPI Saya]" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=8;" vertex="1" parent="1"><mxGeometry x="1080" y="490" width="100" height="20" as="geometry"/></mxCell>
+    <!-- Announcement preview -->
+    <mxCell id="wf3-ann" value="📢  Pengumuman: Meeting 30 Apr | Training 5 Mei   [Lihat Semua →]" style="text;html=1;strokeColor=#D5E8D4;fillColor=#F0FFF0;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="892" y="520" width="360" height="22" as="geometry"/>
+    </mxCell>
+
+    <!-- ─────────────────────────────────────────────────────
+         WIREFRAME 4: REQUEST DETAIL PAGE
+    ───────────────────────────────────────────────────────── -->
+    <mxCell id="wf4-title" value="[4] Request Detail &amp; Activity Timeline" style="text;html=1;strokeColor=none;fillColor=#2E75B6;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="60" y="600" width="380" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf4-frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="60" y="622" width="380" height="510" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf4-topbar" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="60" y="622" width="380" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf4-back" value="← Kembali" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#FFFFFF;align=left;" vertex="1" parent="1"><mxGeometry x="72" y="630" width="80" height="20" as="geometry"/></mxCell>
+    <mxCell id="wf4-heading" value="REQ-DSN-SBP-001 | Promo Ramadan" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="70" y="666" width="340" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf4-status" value="🔵 IN PROGRESS" style="rounded=1;fillColor=#DAE8FC;strokeColor=#2E75B6;fontSize=9;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="70" y="692" width="100" height="20" as="geometry"/></mxCell>
+    <mxCell id="wf4-priority" value="🔴 HIGH" style="rounded=1;fillColor=#FCE4D6;strokeColor=#AE4132;fontSize=9;" vertex="1" parent="1"><mxGeometry x="180" y="692" width="60" height="20" as="geometry"/></mxCell>
+    <!-- Info table -->
+    <mxCell id="wf4-info" value="Brand: ShabuPot  |  Jenis: Design Request  |  Task: Promo  |  Deadline: 29 Apr" style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="70" y="720" width="360" height="22" as="geometry"/></mxCell>
+    <mxCell id="wf4-brief-hdr" value="Brief / Deskripsi" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="70" y="750" width="120" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf4-brief" value="Buat desain promo Ramadan untuk feed Instagram ShabuPot. Warna dominan gold dan maroon. Sertakan promo beli 1 gratis 1..." style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="70" y="768" width="360" height="50" as="geometry"/></mxCell>
+    <!-- Files uploaded -->
+    <mxCell id="wf4-files-hdr" value="File Hasil Kerja" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="70" y="826" width="120" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf4-file1" value="📎 promo-ramadan-v1.png  (2.1 MB)  [Download]" style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="70" y="844" width="360" height="20" as="geometry"/></mxCell>
+    <!-- Timeline -->
+    <mxCell id="wf4-tl-hdr" value="🕐  Activity Timeline" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="70" y="872" width="160" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf4-tl1" value="✅  29 Apr 08:12 – Budi (Designer) mengubah status ke In Progress" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#1A7A4A;" vertex="1" parent="1"><mxGeometry x="80" y="894" width="340" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf4-tl2" value="✅  28 Apr 17:30 – Sistem auto-assign ke Designer: Budi" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="80" y="912" width="340" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf4-tl3" value="✅  28 Apr 17:28 – Andi (Mktg Mgr) + Rina (DM) – Approve" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="80" y="930" width="340" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf4-tl4" value="📋  27 Apr 09:00 – Dewi (Brand Manager) submit permintaan" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="80" y="948" width="340" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf4-tl5" value="📋  27 Apr 08:45 – Dewi (Brand Manager) membuat draft" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#999999;" vertex="1" parent="1"><mxGeometry x="80" y="966" width="340" height="16" as="geometry"/></mxCell>
+
+    <!-- ─────────────────────────────────────────────────────
+         WIREFRAME 5: ANNOUNCEMENT BOARD
+    ───────────────────────────────────────────────────────── -->
+    <mxCell id="wf5-title" value="[5] Announcement Board" style="text;html=1;strokeColor=none;fillColor=#D6B656;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="470" y="600" width="380" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf5-frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="470" y="622" width="380" height="510" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf5-topbar" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="470" y="622" width="380" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf5-logo2" value="MPR System" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="482" y="630" width="120" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf5-heading" value="📢  Announcement Board" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="480" y="668" width="240" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf5-btn" value="+ Buat Pengumuman" style="rounded=1;fillColor=#D6B656;strokeColor=none;fontColor=#FFFFFF;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="718" y="668" width="120" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Filter tabs -->
+    <mxCell id="wf5-tabs" value="[Semua]  [Meeting]  [Event]  [Training]  [Reminder]" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=9;align=left;" vertex="1" parent="1">
+      <mxGeometry x="480" y="698" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Ann cards -->
+    <mxCell id="wf5-c1" value="" style="rounded=1;fillColor=#FFF9E6;strokeColor=#D6B656;" vertex="1" parent="1"><mxGeometry x="480" y="728" width="360" height="70" as="geometry"/></mxCell>
+    <mxCell id="wf5-c1a" value="📅  Meeting Review Bulanan" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="490" y="732" width="250" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf5-c1b" value="[Meeting]" style="rounded=1;fillColor=#FFE6CC;strokeColor=none;fontSize=8;" vertex="1" parent="1"><mxGeometry x="750" y="732" width="60" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf5-c1c" value="30 April 2025 | Andi (Mktg Manager) | 14:00 WIB di Ruang Rapat Lantai 3. Harap hadir tepat waktu." style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#666666;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="490" y="750" width="340" height="30" as="geometry"/></mxCell>
+    <mxCell id="wf5-c1d" value="💬 3 komentar   [Lihat &amp; Komentar]   ✏️ Edit   🗑 Hapus" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#2E75B6;" vertex="1" parent="1"><mxGeometry x="490" y="784" width="340" height="14" as="geometry"/></mxCell>
+
+    <mxCell id="wf5-c2" value="" style="rounded=1;fillColor=#F0FFF0;strokeColor=#1A7A4A;" vertex="1" parent="1"><mxGeometry x="480" y="806" width="360" height="70" as="geometry"/></mxCell>
+    <mxCell id="wf5-c2a" value="🏋  Training Canva untuk Desainer" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="490" y="810" width="240" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf5-c2b" value="[Training]" style="rounded=1;fillColor=#D5E8D4;strokeColor=none;fontSize=8;" vertex="1" parent="1"><mxGeometry x="750" y="810" width="60" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf5-c2c" value="5 Mei 2025 | Rina (Digital Marketing) | Dihadiri oleh tim Designer wajib. Link Zoom akan dibagikan H-1." style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#666666;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="490" y="828" width="340" height="30" as="geometry"/></mxCell>
+    <mxCell id="wf5-c2d" value="💬 1 komentar   [Lihat &amp; Komentar]   ✏️ Edit" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;align=left;fontColor=#2E75B6;" vertex="1" parent="1"><mxGeometry x="490" y="862" width="280" height="14" as="geometry"/></mxCell>
+
+    <!-- Comment section expanded -->
+    <mxCell id="wf5-comm-hdr" value="💬  Komentar (3)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="490" y="886" width="160" height="16" as="geometry"/></mxCell>
+    <mxCell id="wf5-comm1" value="👤 Budi: Siap hadir, Pak." style="text;html=1;strokeColor=#EEEEEE;fillColor=#F2F2F2;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="490" y="904" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf5-comm2" value="👤 Sari: Saya konfirmasi hadir." style="text;html=1;strokeColor=#EEEEEE;fillColor=#FFFFFF;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="490" y="922" width="360" height="18" as="geometry"/></mxCell>
+    <mxCell id="wf5-comm-input" value="Tulis komentar...                                      [Kirim]" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=8;align=left;" vertex="1" parent="1"><mxGeometry x="490" y="950" width="360" height="24" as="geometry"/></mxCell>
+
+    <!-- ─────────────────────────────────────────────────────
+         WIREFRAME 6: KPIM PAGE
+    ───────────────────────────────────────────────────────── -->
+    <mxCell id="wf6-title" value="[6] KPIM – KPI Management Page" style="text;html=1;strokeColor=none;fillColor=#555599;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=left;" vertex="1" parent="1">
+      <mxGeometry x="880" y="600" width="380" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf6-frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="880" y="622" width="380" height="510" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf6-topbar" value="" style="rounded=0;fillColor=#1F3864;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="880" y="622" width="380" height="36" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf6-heading" value="📈  KPI Saya – Mei 2025" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+      <mxGeometry x="892" y="668" width="240" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf6-btn" value="+ Tambah KPI" style="rounded=1;fillColor=#555599;strokeColor=none;fontColor=#FFFFFF;fontSize=9;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="1140" y="668" width="100" height="22" as="geometry"/>
+    </mxCell>
+    <!-- Period selector -->
+    <mxCell id="wf6-period" value="Periode: [Mei 2025 ▾]   Role: Designer  |  Rata-rata: 83%" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="892" y="698" width="360" height="22" as="geometry"/>
+    </mxCell>
+    <!-- KPI cards -->
+    <mxCell id="wf6-k1" value="" style="rounded=1;fillColor=#D5E8D4;strokeColor=#1A7A4A;" vertex="1" parent="1"><mxGeometry x="892" y="728" width="360" height="60" as="geometry"/></mxCell>
+    <mxCell id="wf6-k1a" value="Jumlah Desain Promo Selesai" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="732" width="240" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k1b" value="🟢 On Track" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#1A7A4A;align=right;" vertex="1" parent="1"><mxGeometry x="1090" y="732" width="80" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k1c" value="Target: 10  |  Pencapaian: 8  |  80%" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#666666;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="748" width="250" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k1d" value="████████░░" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#1A7A4A;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="760" width="200" height="20" as="geometry"/></mxCell>
+    <mxCell id="wf6-k1e" value="✏️  🗑" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;align=right;" vertex="1" parent="1"><mxGeometry x="1130" y="760" width="50" height="20" as="geometry"/></mxCell>
+
+    <mxCell id="wf6-k2" value="" style="rounded=1;fillColor=#FFF2CC;strokeColor=#D6B656;" vertex="1" parent="1"><mxGeometry x="892" y="796" width="360" height="60" as="geometry"/></mxCell>
+    <mxCell id="wf6-k2a" value="Revisi Desain Tepat Waktu" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="800" width="240" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k2b" value="🟡 Dalam Proses" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#D6B656;align=right;" vertex="1" parent="1"><mxGeometry x="1070" y="800" width="100" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k2c" value="Target: 10  |  Pencapaian: 6  |  60%" style="text;html=1;strokeColor=none;fillColor=none;fontSize=8;fontColor=#666666;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="816" width="250" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k2d" value="██████░░░░" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#D6B656;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="828" width="200" height="20" as="geometry"/></mxCell>
+
+    <mxCell id="wf6-k3" value="" style="rounded=1;fillColor=#FCE4D6;strokeColor=#AE4132;" vertex="1" parent="1"><mxGeometry x="892" y="864" width="360" height="60" as="geometry"/></mxCell>
+    <mxCell id="wf6-k3a" value="Jumlah Event Campaign Dikerjakan" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="868" width="240" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k3b" value="🔴 Perlu Perhatian" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#AE4132;align=right;" vertex="1" parent="1"><mxGeometry x="1060" y="868" width="110" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k3c" value="Target: 5  |  Pencapaian: 2  |  40%" style="text;html=1;strokeColor=none;fillColor=none;fontSize:8;fontColor=#666666;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="884" width="250" height="14" as="geometry"/></mxCell>
+    <mxCell id="wf6-k3d" value="████░░░░░░" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#AE4132;align=left;" vertex="1" parent="1"><mxGeometry x="902" y="896" width="200" height="20" as="geometry"/></mxCell>
+
+    <!-- Summary bar -->
+    <mxCell id="wf6-summary" value="📊  Rata-rata Pencapaian Bulan Ini: 60%  |  1 KPI On Track  |  1 In Progress  |  1 Perlu Perhatian" style="rounded=1;fillColor=#F2F2F2;strokeColor=#CCCCCC;fontSize=8;align=left;" vertex="1" parent="1">
+      <mxGeometry x="892" y="936" width="360" height="24" as="geometry"/>
+    </mxCell>
+    <mxCell id="wf6-update-btn" value="[Update Pencapaian]" style="rounded=1;fillColor=#555599;strokeColor=none;fontColor=#FFFFFF;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="968" width="130" height="22" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
