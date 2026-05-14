@@ -3,8 +3,7 @@
 System Analyst portfolio project — end-to-end documentation
 
 ## 🔗 Links
-- Live Demo: [paste link Lovable kamu di sini]
-
+- Live Demo: https://markpro.lovable.app/
 ## 📋 About
 Sistem untuk mengelola alur produksi konten marketing,
 dari permintaan Brand Manager hingga validasi akhir.
